@@ -42,7 +42,7 @@
     "gray-matter": "^4.0.2",
     "postcss": "^8.1.10",
     "tailwind-heropatterns": "^0.0.8",
-    "tailwindcss": "^2.0.1"
+    "tailwindcss": "^2.0.2"
   },
   "license": "MIT",
   "repository": {
