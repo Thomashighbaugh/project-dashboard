@@ -1,0 +1,15 @@
+{
+  "siteMetadata": {
+    "title": "Projects Lab",
+    "author": {
+      "name": "Thomas Leon Highbaugh",
+      "summary": "a web development autodidact and Linux zealot."
+    },
+    "description": "A curated selection of my projects which you don't even have to leave the site to explore and experiment with",
+    "siteUrl": "https://nextjs-starter-blog-demo.netlify.app/",
+    "language": "en-US",
+    "social": {
+      "twitter": "thomashighbaugh"
+    }
+  }
+}

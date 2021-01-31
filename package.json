@@ -1,0 +1,58 @@
+{
+  "name": "nextjs-blog-starter",
+  "version": "0.2.0",
+  "description": "A Next.js template for a blog website.",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "clsx": "^1.1.1",
+    "date-fns": "^2.16.1",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "lazysizes": "^5.2.2",
+    "lqip-loader": "^2.2.1",
+    "next": "10.0.3",
+    "next-compose-plugins": "^2.2.1",
+    "next-optimized-images": "^2.6.2",
+    "next-themes": "^0.0.10",
+    "postcss-import": "^14.0.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-feather": "^2.0.9",
+    "react-iframe": "^1.8.0",
+    "react-markdown": "^5.0.3",
+    "react-spring": "^8.0.27",
+    "react-syntax-highlighter": "^15.3.1",
+    "react-toggle-dark-mode": "^1.0.3",
+    "remark": "^13.0.0",
+    "remark-html": "^13.0.1",
+    "shortid": "^2.2.16",
+    "styled-components": "^5.2.1",
+    "typeface-merriweather": "^1.1.13",
+    "typeface-open-sans": "^1.1.13",
+    "webp-loader": "^0.6.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.3.1",
+    "autoprefixer": "^10.0.4",
+    "gray-matter": "^4.0.2",
+    "postcss": "^8.1.10",
+    "tailwind-heropatterns": "^0.0.8",
+    "tailwindcss": "^2.0.1"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jfelix61/nextjs-starter-blog.git"
+  },
+  "homepage": "https://github.com/Jfelix61/nextjs-starter-blog#readme",
+  "keywords": [
+    "next.js",
+    "blog",
+    "template"
+  ]
+}

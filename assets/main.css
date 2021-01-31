@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=VT323&display=swap');@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+h1 {
+  @apply text-5xl;
+  font-weight: 900;
+
+}
+  footer a {
+    font-weight: 900;
+  }
+
+  a {
+    font-weight: 900;
+  }
+}
+
+
+body {
+  font-family: "Share Tech Mono", sans-serif;
+}
+h1,h2,h3,h4,h5,h6, a, button{
+  font-family: "VT323", sans-serif;
+}
+
+
+iframe{
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.footer{
+  position:fixed;
+  bottom:0;
+}
+
+iframe{
+  font-family: none;
+}
