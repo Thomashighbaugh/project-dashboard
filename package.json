@@ -46,7 +46,7 @@
     "@tailwindcss/typography": "^0.3.1",
     "autoprefixer": "^10.0.4",
     "gray-matter": "^4.0.2",
-    "postcss": "^8.1.10",
+    "postcss": "^8.2.4",
     "tailwind-heropatterns": "^0.0.8",
     "tailwindcss": "^2.0.1"
   },
