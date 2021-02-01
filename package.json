@@ -1,7 +1,7 @@
 {
-  "name": "nextjs-blog-starter",
+  "name": "projects-lab",
   "version": "0.2.0",
-  "description": "A Next.js template for a blog website.",
+  "description": "A curated list of projects by TLH",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -47,12 +47,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Jfelix61/nextjs-starter-blog.git"
+    "url": "git+https://github.com/Thomashighbaugh/projects-lab"
   },
-  "homepage": "https://github.com/Jfelix61/nextjs-starter-blog#readme",
+  "homepage": "https://thomasleonhighbaugh.me",
   "keywords": [
     "next.js",
-    "blog",
-    "template"
+    "projects lab",
+    "iframe"
   ]
 }
