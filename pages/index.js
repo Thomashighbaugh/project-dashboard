@@ -18,7 +18,7 @@ export default function Home({ allPostsData }) {
       </Head>
 {/* Begin Title */}
       <section className="flex flex-col justify-center w-8/12 p-4 m-3 mx-auto">
-        <h2 className="text-4xl font-bold border-b-4 border-gray-500 text-center txt-gray-900 fo dark:text-blue-50">
+        <h2 className="text-4xl text-center border-b-4 border-gray-500 font-b txt-gray-900 fo dark:text-blue-50">
           Welcome to the
           Projects Lab
         </h2>
@@ -39,13 +39,13 @@ export default function Home({ allPostsData }) {
         role="group"
       >
         <button
-           className="px-6 py-3 mx-1 text-2xl text-white bg-gray-700 border-2 outline-none rounded-2xl font-bold focus:shadow-outline dark:bg-gray-400 dark:border-white hover:bg-gray-50 dark:hover:bg-gray-50 hover:text-gray-900 hover:border-gray-900"
+           className="px-6 py-3 mx-1 text-2xl text-white bg-gray-700 border-2 outline-none rounded-2xl focus:shadow-outline dark:bg-gray-400 dark:border-white hover:bg-gray-50 dark:hover:bg-gray-50 hover:text-gray-900 hover:border-gray-900"
           onClick={() => setCategory(viewCategory === "HTML" ? "all" : "HTML")}
         >
           HTML
         </button>
         <button
-            className= "px-6 py-3 mx-1 text-2xl text-white bg-gray-700 border-2 outline-none rounded-2xl font-bold focus:shadow-outline dark:bg-gray-400 dark:border-white hover:bg-gray-50 dark:hover:bg-gray-50 hover:text-gray-900 hover:border-gray-900"
+            className= "px-6 py-3 mx-1 text-2xl text-white bg-gray-700 border-2 outline-none rounded-2xl focus:shadow-outline dark:bg-gray-400 dark:border-white hover:bg-gray-50 dark:hover:bg-gray-50 hover:text-gray-900 hover:border-gray-900"
           onClick={() =>
             setCategory(viewCategory === "Javascript" ? "all" : "Javascript")
           }
@@ -53,7 +53,7 @@ export default function Home({ allPostsData }) {
           Javascript
         </button>
         <button
-            className="px-6 py-3 mx-1 text-2xl text-white bg-gray-700 border-2 outline-none font-bold  rounded-2xl focus:shadow-outline dark:bg-gray-400 dark:border-white hover:bg-gray-50 dark:hover:bg-gray-50 hover:text-gray-900 hover:border-gray-900"
+            className="px-6 py-3 mx-1 text-2xl text-white bg-gray-700 border-2 outline-none rounded-2xl focus:shadow-outline dark:bg-gray-400 dark:border-white hover:bg-gray-50 dark:hover:bg-gray-50 hover:text-gray-900 hover:border-gray-900"
           onClick={() =>
             setCategory(viewCategory === "React" ? "all" : "React")
           }
