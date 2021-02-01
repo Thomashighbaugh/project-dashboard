@@ -7,17 +7,18 @@ import { getSortedPostsData } from "@utils/posts";
 import Image from "next/image";
 
 export default function Home({ allPostsData }) {
-  // Delcare what category should be shown
+  // Declare what category should be shown
   const [viewCategory, setCategory] = useState("all");
 
   return (
+    // begin page
     <Layout>
       <Head>
         <title>Projects Lab</title>
       </Head>
-
-      <section className="flex flex-col  w-8/12 p-4 justify-center  mx-auto m-3">
-        <h2 className="text-center text-4xl text-gray-900 dark:text-blue-50 border-b-4 border-gray-500">
+{/* Begin Title */}
+      <section className="flex flex-col justify-center w-8/12 p-4 m-3 mx-auto">
+        <h2 className="text-4xl text-center text-gray-900 border-b-4 border-gray-500 dark:text-blue-50">
           Welcome to the
           Projects Lab
         </h2>
@@ -30,22 +31,24 @@ export default function Home({ allPostsData }) {
         </p>
         <br/>
         <p className="text-gray-900 dark:text-gray-50">
-        <span className="text-gray-700 font-black ">NOTE: </span>
+        <span className="font-black text-gray-700 ">NOTE: </span>
          At present there is no way to prevent CSS inheritance WITHIN the iframe window that is clean enough for inclusion within the site, thus to see the typographical glory of the sites, you will need to click the button to see the site in its production state.
         </p>
       </section>
+      {/* End Title */}
+      {/* Categorical Buttons  */}
       <section
-        className="flex justify-center rounded-lg text-lg mb-4"
+        className="flex justify-center mb-4 text-lg rounded-lg"
         role="group"
       >
         <button
-           className="bg-gray-700 text-white text-2xl border-2 rounded-2xl px-6 py-3  mx-1 outline-none focus:shadow-outline dark:bg-gray-400 dark:border-white hover:bg-gray-50 dark:hover:bg-gray-50 hover:text-gray-900 hover:border-gray-900"
+           className="px-6 py-3 mx-1 text-2xl text-white bg-gray-700 border-2 outline-none rounded-2xl focus:shadow-outline dark:bg-gray-400 dark:border-white hover:bg-gray-50 dark:hover:bg-gray-50 hover:text-gray-900 hover:border-gray-900"
           onClick={() => setCategory(viewCategory === "HTML" ? "all" : "HTML")}
         >
           HTML
         </button>
         <button
-            className= "bg-gray-700 text-white text-2xl border-2 rounded-2xl px-6 py-3  mx-1 outline-none focus:shadow-outline dark:bg-gray-400 dark:border-white hover:bg-gray-50 dark:hover:bg-gray-50 hover:text-gray-900 hover:border-gray-900"
+            className= "px-6 py-3 mx-1 text-2xl text-white bg-gray-700 border-2 outline-none rounded-2xl focus:shadow-outline dark:bg-gray-400 dark:border-white hover:bg-gray-50 dark:hover:bg-gray-50 hover:text-gray-900 hover:border-gray-900"
           onClick={() =>
             setCategory(viewCategory === "Javascript" ? "all" : "Javascript")
           }
@@ -53,7 +56,7 @@ export default function Home({ allPostsData }) {
           Javascript
         </button>
         <button
-            className="bg-gray-700 text-white text-2xl border-2 rounded-2xl px-6 py-3  mx-1 outline-none focus:shadow-outline dark:bg-gray-400 dark:border-white hover:bg-gray-50 dark:hover:bg-gray-50 hover:text-gray-900 hover:border-gray-900"
+            className="px-6 py-3 mx-1 text-2xl text-white bg-gray-700 border-2 outline-none rounded-2xl focus:shadow-outline dark:bg-gray-400 dark:border-white hover:bg-gray-50 dark:hover:bg-gray-50 hover:text-gray-900 hover:border-gray-900"
           onClick={() =>
             setCategory(viewCategory === "React" ? "all" : "React")
           }
@@ -61,36 +64,43 @@ export default function Home({ allPostsData }) {
           React
         </button>
       </section>
+      {/* End Categorical Buttons */}
+      {/* Posts Displayed */}
       <section>
-        <ul className="mx-auto max-w-xl p-4">
+        <ul className="max-w-xl p-4 mx-auto">
           {allPostsData.map(({ id, category, date, title }) => (
             <li
-              className="border-b-4 border-gray-300 p-4 text-center align-middle"
+              className="p-4 text-center align-middle border-b-4 border-gray-300"
               key={id}
               style={{
                 display:
+                  // Presently set to none, makes a cleaner interface
                   viewCategory === category || viewCategory === "none"
                     ? "block"
                     : "none",
               }}
             >
+              {/* Creates Post Link as Heading  */}
               <Link href="/[category]/[id]" as={`/${category}/${id}`}>
-                <a className="text-gray-500  text-2xl   hover:text-blue-600 dark:text-blue-50 dark:hover:text-blue-600">
+                <a className="text-2xl text-gray-500 hover:text-blue-600 dark:text-blue-50 dark:hover:text-blue-600">
                   {title}
                 </a>
               </Link>
               <br />
               <small>
+                {/* Posts Date */}
                 <Date dateString={date} />
               </small>
             </li>
           ))}
         </ul>
       </section>
+      {/* End Posts Displayed */}
+      {/* End Page */}
     </Layout>
   );
 }
-
+// Props
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
   return {

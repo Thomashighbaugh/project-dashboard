@@ -3,7 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 @layer base {
-h1 {
+
+/* Styles applied after tailwind, I have opted to using long class names in components and eschewing much in here for a break from the nightmare CSS can be. Tailwind works well for this it turns out. */
+  h1 {
   @apply text-5xl;
   font-weight: 900;
 
