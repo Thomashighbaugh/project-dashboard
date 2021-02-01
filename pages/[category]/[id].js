@@ -41,7 +41,7 @@ export default function Post({ postData }) {
       <iframe
         src={postData.url}
         height="1200px"
-        width="1200px"
+        width="100%"
         display="initial"
         position="relative"
       />
