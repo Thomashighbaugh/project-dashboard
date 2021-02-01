@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Luckiest+Guy&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=VT323&display=swap');@tailwind base;
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 @layer base {
@@ -24,7 +26,7 @@ body {
   font-family: "Share Tech Mono", sans-serif;
 }
 h1,h2,h3,h4,h5,h6, a, button{
-  font-family: "VT323", sans-serif;
+  font-family: "Audiowide", sans-serif;
 }
 
 

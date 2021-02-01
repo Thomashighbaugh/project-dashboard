@@ -3,6 +3,11 @@
   "version": "0.2.0",
   "description": "A curated list of projects by TLH",
   "private": true,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thomashighbaugh/projects-lab"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -43,11 +48,6 @@
     "postcss": "^8.1.10",
     "tailwind-heropatterns": "^0.0.8",
     "tailwindcss": "^2.0.1"
-  },
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Thomashighbaugh/projects-lab"
   },
   "homepage": "https://thomasleonhighbaugh.me",
   "keywords": [
