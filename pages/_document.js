@@ -5,7 +5,7 @@ import { getSiteMetaData } from "@utils/helpers";
 export default class MyDocument extends Document {
   render() {
     const siteMetadata = getSiteMetaData();
-//If you want to add universal styles outside of the Layout component this is an option that is more general. 
+//Available for site wide customization
     return (
       <Html lang={siteMetadata.language}>
         <Head />

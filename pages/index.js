@@ -22,18 +22,15 @@ export default function Home({ allPostsData }) {
           Welcome to the
           Projects Lab
         </h2>
+<br/>
         <p className="text-gray-900 dark:text-gray-50">
+        <span className="font-black text-gray-700 ">NOTE: </span>
           Click on one the categories below and a list of projects will display
           in a list, choose one and you will be taken to a dynamically generated
           page with an embedded display of that site for your examination
           purposes after a short introduction to the site itself and why it was
           written.
-        </p>
-        <br/>
-        <p className="text-gray-900 dark:text-gray-50">
-        <span className="font-black text-gray-700 ">NOTE: </span>
-         At present there is no way to prevent CSS inheritance WITHIN the iframe window that is clean enough for inclusion within the site, thus to see the typographical glory of the sites, you will need to click the button to see the site in its production state.
-        </p>
+                  </p>
       </section>
       {/* End Title */}
       {/* Categorical Buttons  */}
