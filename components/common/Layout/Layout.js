@@ -59,7 +59,7 @@ const LargeTitle = () => (
     <Link href="/">
       <a
           className={clsx(
-               "bg-gray-700 text-white text-5xl font-light border-2 rounded-2xl px-6 py-3  mx-1 outline-none focus:shadow-outline dark:bg-gray-400 dark:border-white hover:bg-gray-50 dark:hover:bg-gray-50 hover:text-gray-900 md:text-2xl hover:border-gray-900"
+               "bg-gray-700 text-white text-5xl font-light border-2 rounded-2xl px-6 py-3  mx-1 outline-none focus:shadow-outline dark:bg-gray-400 dark:border-white hover:bg-gray-50 dark:hover:bg-gray-50 hover:text-gray-900  sm:text-2xl xs:text-2xl hover:border-gray-900"
 
           )}
       >
@@ -74,7 +74,7 @@ const SmallTitle = () => (
     <Link href="/">
       <a
         className={clsx(
-          "text-5xl bg-gray-700 text-white font-light  border-2 hover:bg-gray-400 rounded-2xl  px-4 py-4 mx-1 outline-none dark:bg-gray-400 dark:border-white dark:hover:bg-white dark:hover:text-gray-600 md:text-2xl dark:hover:border-gray-600",
+          "text-5xl bg-gray-700 text-white font-light  border-2 hover:bg-gray-400 rounded-2xl  px-4 py-4 mx-1 outline-none dark:bg-gray-400 dark:border-white dark:hover:bg-white dark:hover:text-gray-600 sm:text-2xl xs:text-2xl  dark:hover:border-gray-600",
           "dark:text-white"
         )}
       >
