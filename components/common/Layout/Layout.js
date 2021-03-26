@@ -11,7 +11,6 @@ export function Layout({ children }) {
       <div className="max-w-screen-xl px-6 py-12 mx-auto antialiased font-body">
         <Header />
         <main className="text-gray-300 border-4 border-gray-900 dark:border-gray-200 rounded-2xl bg-gray-50 dark:bg-gray-900">{children}</main>
-
       </div>
     </div>
   );
@@ -41,13 +40,13 @@ const Header = () => {
         "mb-5": !isRoot,
       })}
     >
-        {isRoot ? <LargeTitle /> : <SmallTitle />}
+      {isRoot ? <LargeTitle /> : <SmallTitle />}
       {mounted && (
         <DarkModeSwitch
           checked={isDarkMode}
           onChange={toggleDarkMode}
           size={80}
-          className= "px-6 py-3 mx-1 text-2xl bg-white border-2 border-gray-900 outline-none rounded-2xl focus:shadow-outline dark:bg-gray-400 dark:border-white hover:bg-gray-50 dark:hover:bg-gray-200 hover:bg-white hover:border-gray-400"
+          className="px-6 py-3 mx-1 text-2xl bg-white border-2 border-gray-900 outline-none rounded-2xl focus:shadow-outline dark:bg-gray-400 dark:border-white hover:bg-gray-50 dark:hover:bg-gray-200 hover:bg-white hover:border-gray-400"
         />
       )}
     </header>
@@ -58,10 +57,10 @@ const LargeTitle = () => (
   <h1>
     <Link href="/">
       <a
-          className={clsx(
-               "bg-gray-700 text-white text-5xl font-light border-2 rounded-2xl px-6 py-3  mx-1 outline-none focus:shadow-outline dark:bg-gray-400 dark:border-white hover:bg-gray-50 dark:hover:bg-gray-50 hover:text-gray-900  sm:text-2xl xs:text-2xl hover:border-gray-900"
+        className={clsx(
+          "bg-gray-700 text-white text-5xl font-light border-2 rounded-2xl px-6 py-3  mx-1 outline-none focus:shadow-outline dark:bg-gray-400 dark:border-white hover:bg-gray-50 dark:hover:bg-gray-50 hover:text-gray-900  sm:text-2xl xs:text-2xl hover:border-gray-900"
 
-          )}
+        )}
       >
         Projects Lab
       </a>

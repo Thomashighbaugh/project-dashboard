@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 const defaultSans = [
   "system-ui",
   "-apple-system",
@@ -44,35 +46,82 @@ module.exports = {
         current: "currentColor",
         // Overwrite default grays with a neutral shade (defaults are blue-ish)
         gray: {
-          100: "#9D9CB4",
-          200: "#8583A2",
-          300: "#727094",
-          400: "#686688",
-          500: "#5A5876",
-          600: "#47465D",
-          700: "#39384A",
-          800: "#2B2A38",
-          900: "#1C1C25",
+          DEFAULT: "#555E70",
+          50: "#F7F7F9",
+          100: "#E9e9ffT",
+          200: "#BEC3CE",
+          300: "#98A1B1",
+          400: "#737E95",
+          500: "#555E70",
+          600: "#4A5262",
+          700: "#3F4653",
+          800: "#343945",
+          900: "#292D36",
         },
         white: colors.white,
 
         blue: {
-          100: "#BBF1FF",
-          200: "#77E3FF",
-          300: "#55DCFF",
-          400: "#33D5FF",
-          500: "#00caff",
-          600: "#00BDEE",
-          700: "#00A2CC",
-          800: "#006C88",
-          900: "#004355",
+          DEFAULT: "#00CAFF",
+          50: "#8AE7FF",
+          100: "#7AE3FF",
+          200: "#5CDDFF",
+          300: "#3DD7FF",
+          400: "#1FD0FF",
+          500: "#00CAFF",
+          600: "#00BEF0",
+          700: "#00B2E0",
+          800: "#00A6D1",
+          900: "#009AC2",
         },
       },
       fontSize: {
         "7xl": "4.5rem",
       },
       spacing: {
-        14: "3.375rem",
+        px: "1px",
+        0: "0",
+        1: "0.25rem",
+        2: "0.5rem",
+        3: "0.75rem",
+        4: "1rem",
+        5: "1.25rem",
+        6: "1.5rem",
+        7: "1.75rem",
+        8: "2rem",
+        9: "2.25rem",
+        10: "2.5rem",
+        12: "3rem",
+        14: "3.5rem",
+        16: "4rem",
+        20: "5rem",
+        22: "5.5rem",
+        24: "6rem",
+        26: "6.5rem",
+        28: "7rem",
+        30: "7.5rem",
+        32: "8rem",
+        34: "8.5rem",
+        36: "9rem",
+        38: "9.5rem",
+        40: "10rem",
+        44: "11rem",
+        48: "12rem",
+        52: "13rem",
+        56: "14rem",
+        60: "15rem",
+        64: "16rem",
+        68: "17rem",
+        72: "18rem",
+        76: "19rem",
+        80: "20rem",
+        88: "22rem",
+        96: "24rem",
+        104: "26rem",
+        110: "28rem",
+        118: "30rem",
+        126: "32rem",
+        132: "34rem",
+        140: "36rem",
       },
       typography: (theme) => ({
         DEFAULT: {
@@ -145,35 +194,34 @@ module.exports = {
       }),
     },
     fontFamily: {
-      display: ["Luckiest Guy", ...defaultSans],
-      body: ["ASAP Condensed", ...defaultSerif],
+      san: ["Inter", ...defaultTheme.fontFamily.sans],
     },
   },
   plugins: [require("@tailwindcss/typography"),
-    require('postcss-import'),
-    require('tailwindcss'),
-    require('autoprefixer'),
-    require("tailwind-heropatterns")({
-      // as per tailwind docs you can pass variants
-      variants: ["dark"],
+  require('postcss-import'),
+  require('tailwindcss'),
+  require('autoprefixer'),
+  require("tailwind-heropatterns")({
+    // as per tailwind docs you can pass variants
+    variants: ["dark"],
 
-      // the list of patterns you want to generate a class for
-      // the names must be in kebab-case
-      // an empty array will generate all 87 patterns
-      patterns: ["brick-wall", "signal"],
+    // the list of patterns you want to generate a class for
+    // the names must be in kebab-case
+    // an empty array will generate all 87 patterns
+    patterns: [],
 
-      // The foreground colors of the pattern
-      colors: {
-        default: "#47465d",
-        "dark": "#686688" //also works with rgb(0,0,205)
-      },
+    // The foreground colors of the pattern
+    colors: {
+      default: "#47465d",
+      "dark": "#686688" //also works with rgb(0,0,205)
+    },
 
-      // The foreground opacity
-      opacity: {
-        default: "1.0",
-        "100": "1.0"
-      }
-    }),
+    // The foreground opacity
+    opacity: {
+      default: "1.0",
+      "100": "1.0"
+    }
+  }),
   ],
   variants: {
     extend: {

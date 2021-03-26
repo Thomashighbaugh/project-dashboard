@@ -1,5 +1,5 @@
 {
-  "name": "projects-lab",
+  "name": "projects-dashboard",
   "version": "0.2.0",
   "description": "A curated list of projects by TLH",
   "private": true,
@@ -37,23 +37,37 @@
     "remark": "^13.0.0",
     "remark-html": "^13.0.1",
     "shortid": "^2.2.16",
-    "styled-components": "^5.2.1",
-    "typeface-merriweather": "^1.1.13",
     "typeface-open-sans": "^1.1.13",
     "webp-loader": "^0.6.0"
   },
   "devDependencies": {
+    "@tailwindcss/jit": "^0.1.7",
     "@tailwindcss/typography": "^0.3.1",
     "autoprefixer": "^10.2.4",
     "gray-matter": "^4.0.2",
-    "postcss": "^8.2.4",
+    "postcss": "^8.2.8",
     "tailwind-heropatterns": "^0.0.8",
-    "tailwindcss": "^2.0.2"
+    "tailwindcss": "^2.0.4"
   },
   "homepage": "https://thomasleonhighbaugh.me",
   "keywords": [
     "next.js",
     "projects lab",
-    "iframe"
+    "iframe",
+    "projects-dashboard",
+    "tailwindcss",
+    "jsx",
+    "nextjs starter",
+    "react.js",
+    "projects",
+    "dev projects",
+    "devprojects",
+    "job seeking",
+    "autodidact",
+    "self-led learning",
+    "self education",
+    "continuous education",
+    "continuous learning",
+    "project iframe"
   ]
 }
